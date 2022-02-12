@@ -1,0 +1,35 @@
+read a file with a fd
+check in the buff bytes if i have a \n
+substr the part including \n
+and save the rest in buff
+every call of the function is going to check in the buff if i have a new line
+if i dont, read again, and append the read_bytes to the remaining
+
+
+
+
+
+
+	check if buff is empty or i read all the buff;
+	read from file;
+	check in the read bytes if i have a \n charachter
+		-substring the string to \n and return it
+		-read some more memory and add it to a new read of file
+	
+
+
+
+	if buff empty
+		function to read the file
+	if buff not empty
+		look for the \n
+	if buff is finished without \new
+		read again and add new part
+
+
+
+problem == when i have returned all buff or if there are no \n in buff
+problem == i dont get the last line
+problem == weird stuff in the BUFFER_SIZE + 1 char
+find another way to check the position of \n in buff
+LAST LINE last line
